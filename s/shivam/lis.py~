@@ -1,0 +1,12 @@
+lis=[]
+l=input("enter the range")
+for i in range(l):
+	var1=input("enter the number:")
+	lis.append(var1)
+for i in range(l):
+	for j in range(l):
+		if lis[j]>lis[j+1]:
+			temp=lis[j]
+			lis[j]=lis[j+1]
+			lis[j+1]=temp
+print lis[1]

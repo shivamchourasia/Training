@@ -1,0 +1,6 @@
+month=['j','f','m','a','ma','ju','jul','au','se','oc','no','de']
+in=raw_input("enter")
+in=int(in)
+end=in*3
+start=end-3
+print month[start:end]

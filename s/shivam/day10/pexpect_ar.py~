@@ -1,0 +1,15 @@
+import pexpect
+import sys
+m=pexpect.spawn("python arithmetic_pexpect.py")
+m.logfile_read=sys.stdout
+m.expect("var1")
+var1=input("enter")
+m.sendline(var1)
+m.expect("var2")
+var2=input("enter")
+m.sendline(var2)
+m.expect("var3")
+var3=raw_input("op")
+m.sendline(var3)
+m.expect('\n')
+m.close()

@@ -1,0 +1,15 @@
+class A:
+	def __init__(self,a):
+		self.a=a
+#		print a
+	def __str__(self):
+		return str(self.a)
+	def s(self):
+		return self**2
+	def __del__(self):
+		pass
+b=A(10)
+print b
+print b.s()
+del b
+#print b

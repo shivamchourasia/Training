@@ -1,0 +1,4 @@
+while True:
+	var=raw_input("enter")
+	if var=='eof':
+		break

@@ -1,0 +1,17 @@
+import sys
+import smtplib
+import getpass
+host="smtp.gmail.com"
+port=587
+server=smtplib.SMTP(host,port)
+server.ehlo()
+server.starttls()
+server.ehlo()
+username='shivamchourasia190@gmail.com'
+password=getpass.getpass()
+server.login(username,password)
+to=sys.argv[1]
+sub=sys.argv[2]
+mes=sys.argv[3]
+message="subject:  %s\n\n %s"%(sub,mes)
+server.sendmail(username,to,message)

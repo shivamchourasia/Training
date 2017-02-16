@@ -1,0 +1,6 @@
+var=input("enter")
+for i in range(var+1):
+	print '*'*i
+for j in range(var,0,-1):
+	print '*'*(j-1)
+

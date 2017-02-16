@@ -1,0 +1,20 @@
+class Rectangle:
+	def __init__(self,a,b):
+		self.a=a
+		self.b=b
+	def area(self):
+		print 'area:',+(self.a*self.b)
+	def perimeter(self):
+		print 'perimeter:',+2*(self.a+self.b)
+	def __add__(self,other):
+		return Rectangle(self.a+other.a, self.b+other.b)
+#var1=input("enter the length")
+#var2=input("enter the breadth")
+#a=Rectangle(var1,var2)
+#b=Rectangle(var1,var2)
+#a.area()
+#a.perimeter()
+#c= a+b	
+#print c.a
+#print c.b	
+#c.area()

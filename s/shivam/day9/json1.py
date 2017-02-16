@@ -1,0 +1,4 @@
+import json
+my_list=[1,2,3,4,5]
+my_dict={'name':'hari','at':'asm','pack':['python','AJS','HTML']}
+print json.dumps(my_dict,indent=4)
